@@ -1,0 +1,1317 @@
+{
+  "summary": {
+    "total_transactions": 100,
+    "flagged_chains": 6,
+    "high_risk_chains": 0,
+    "medium_risk_chains": 3,
+    "low_risk_chains": 3,
+    "destination_anomalies": 2,
+    "individual_anomalies": 43
+  },
+  "chain_anomalies": [
+    {
+      "chain_id": "chain_10",
+      "customers": [
+        "C69673470",
+        "C527211736",
+        "C1533123860",
+        "C1718906711"
+      ],
+      "transaction_count": 4,
+      "total_volume": 285877.27,
+      "risk_score": 65,
+      "risk_level": "MEDIUM",
+      "anomalies": [
+        {
+          "pattern": "repeated_high_value",
+          "description": "3 consecutive high-value transactions (>10,000) in sequence",
+          "transactions": [
+            {
+              "row": 72,
+              "customer": "C527211736",
+              "type": "CASH_OUT",
+              "amount": 47458.86,
+              "destination": "C2096057945",
+              "isFraud": 0
+            },
+            {
+              "row": 73,
+              "customer": "C1533123860",
+              "type": "CASH_OUT",
+              "amount": 136872.92,
+              "destination": "C766572210",
+              "isFraud": 0
+            },
+            {
+              "row": 74,
+              "customer": "C1718906711",
+              "type": "CASH_OUT",
+              "amount": 94253.33,
+              "destination": "C977993101",
+              "isFraud": 0
+            }
+          ],
+          "total_amount": 278585.11
+        },
+        {
+          "pattern": "sudden_type_change",
+          "description": "Sudden change from PAYMENT to CASH_OUT (high-risk type)",
+          "transactions": [
+            {
+              "row": 71,
+              "customer": "C69673470",
+              "type": "PAYMENT",
+              "amount": 7292.16,
+              "destination": "M1082411691",
+              "isFraud": 0
+            },
+            {
+              "row": 72,
+              "customer": "C527211736",
+              "type": "CASH_OUT",
+              "amount": 47458.86,
+              "destination": "C2096057945",
+              "isFraud": 0
+            }
+          ],
+          "total_amount": 54751.02
+        },
+        {
+          "pattern": "sudden_amount_increase",
+          "description": "Amount spiked from 7,292.16 to 47,458.86 (6.5x increase)",
+          "transactions": [
+            {
+              "row": 71,
+              "customer": "C69673470",
+              "type": "PAYMENT",
+              "amount": 7292.16,
+              "destination": "M1082411691",
+              "isFraud": 0
+            },
+            {
+              "row": 72,
+              "customer": "C527211736",
+              "type": "CASH_OUT",
+              "amount": 47458.86,
+              "destination": "C2096057945",
+              "isFraud": 0
+            }
+          ],
+          "spike_ratio": 6.51
+        }
+      ],
+      "transactions": [
+        {
+          "row": 71,
+          "customer": "C69673470",
+          "type": "PAYMENT",
+          "amount": 7292.16,
+          "destination": "M1082411691",
+          "isFraud": 0
+        },
+        {
+          "row": 72,
+          "customer": "C527211736",
+          "type": "CASH_OUT",
+          "amount": 47458.86,
+          "destination": "C2096057945",
+          "isFraud": 0
+        },
+        {
+          "row": 73,
+          "customer": "C1533123860",
+          "type": "CASH_OUT",
+          "amount": 136872.92,
+          "destination": "C766572210",
+          "isFraud": 0
+        },
+        {
+          "row": 74,
+          "customer": "C1718906711",
+          "type": "CASH_OUT",
+          "amount": 94253.33,
+          "destination": "C977993101",
+          "isFraud": 0
+        }
+      ]
+    },
+    {
+      "chain_id": "chain_5",
+      "customers": [
+        "C484199463",
+        "C1570470538"
+      ],
+      "transaction_count": 2,
+      "total_volume": 70829.88,
+      "risk_score": 55,
+      "risk_level": "MEDIUM",
+      "anomalies": [
+        {
+          "pattern": "repeated_high_value",
+          "description": "2 consecutive high-value transactions (>10,000) in sequence",
+          "transactions": [
+            {
+              "row": 48,
+              "customer": "C484199463",
+              "type": "PAYMENT",
+              "amount": 13875.98,
+              "destination": "M2008106788",
+              "isFraud": 0
+            },
+            {
+              "row": 49,
+              "customer": "C1570470538",
+              "type": "CASH_OUT",
+              "amount": 56953.9,
+              "destination": "C824009085",
+              "isFraud": 0
+            }
+          ],
+          "total_amount": 70829.88
+        },
+        {
+          "pattern": "sudden_type_change",
+          "description": "Sudden change from PAYMENT to CASH_OUT (high-risk type)",
+          "transactions": [
+            {
+              "row": 48,
+              "customer": "C484199463",
+              "type": "PAYMENT",
+              "amount": 13875.98,
+              "destination": "M2008106788",
+              "isFraud": 0
+            },
+            {
+              "row": 49,
+              "customer": "C1570470538",
+              "type": "CASH_OUT",
+              "amount": 56953.9,
+              "destination": "C824009085",
+              "isFraud": 0
+            }
+          ],
+          "total_amount": 70829.88
+        },
+        {
+          "pattern": "sudden_amount_increase",
+          "description": "Amount spiked from 13,875.98 to 56,953.90 (4.1x increase)",
+          "transactions": [
+            {
+              "row": 48,
+              "customer": "C484199463",
+              "type": "PAYMENT",
+              "amount": 13875.98,
+              "destination": "M2008106788",
+              "isFraud": 0
+            },
+            {
+              "row": 49,
+              "customer": "C1570470538",
+              "type": "CASH_OUT",
+              "amount": 56953.9,
+              "destination": "C824009085",
+              "isFraud": 0
+            }
+          ],
+          "spike_ratio": 4.1
+        }
+      ],
+      "transactions": [
+        {
+          "row": 48,
+          "customer": "C484199463",
+          "type": "PAYMENT",
+          "amount": 13875.98,
+          "destination": "M2008106788",
+          "isFraud": 0
+        },
+        {
+          "row": 49,
+          "customer": "C1570470538",
+          "type": "CASH_OUT",
+          "amount": 56953.9,
+          "destination": "C824009085",
+          "isFraud": 0
+        }
+      ]
+    },
+    {
+      "chain_id": "chain_12",
+      "customers": [
+        "C807322507",
+        "C283039401"
+      ],
+      "transaction_count": 2,
+      "total_volume": 55699.0,
+      "risk_score": 55,
+      "risk_level": "MEDIUM",
+      "anomalies": [
+        {
+          "pattern": "repeated_high_value",
+          "description": "2 consecutive high-value transactions (>10,000) in sequence",
+          "transactions": [
+            {
+              "row": 79,
+              "customer": "C807322507",
+              "type": "PAYMENT",
+              "amount": 12986.61,
+              "destination": "M396485834",
+              "isFraud": 0
+            },
+            {
+              "row": 80,
+              "customer": "C283039401",
+              "type": "TRANSFER",
+              "amount": 42712.39,
+              "destination": "C1330106945",
+              "isFraud": 0
+            }
+          ],
+          "total_amount": 55699.0
+        },
+        {
+          "pattern": "sudden_type_change",
+          "description": "Sudden change from PAYMENT to TRANSFER (high-risk type)",
+          "transactions": [
+            {
+              "row": 79,
+              "customer": "C807322507",
+              "type": "PAYMENT",
+              "amount": 12986.61,
+              "destination": "M396485834",
+              "isFraud": 0
+            },
+            {
+              "row": 80,
+              "customer": "C283039401",
+              "type": "TRANSFER",
+              "amount": 42712.39,
+              "destination": "C1330106945",
+              "isFraud": 0
+            }
+          ],
+          "total_amount": 55699.0
+        },
+        {
+          "pattern": "sudden_amount_increase",
+          "description": "Amount spiked from 12,986.61 to 42,712.39 (3.3x increase)",
+          "transactions": [
+            {
+              "row": 79,
+              "customer": "C807322507",
+              "type": "PAYMENT",
+              "amount": 12986.61,
+              "destination": "M396485834",
+              "isFraud": 0
+            },
+            {
+              "row": 80,
+              "customer": "C283039401",
+              "type": "TRANSFER",
+              "amount": 42712.39,
+              "destination": "C1330106945",
+              "isFraud": 0
+            }
+          ],
+          "spike_ratio": 3.29
+        }
+      ],
+      "transactions": [
+        {
+          "row": 79,
+          "customer": "C807322507",
+          "type": "PAYMENT",
+          "amount": 12986.61,
+          "destination": "M396485834",
+          "isFraud": 0
+        },
+        {
+          "row": 80,
+          "customer": "C283039401",
+          "type": "TRANSFER",
+          "amount": 42712.39,
+          "destination": "C1330106945",
+          "isFraud": 0
+        }
+      ]
+    },
+    {
+      "chain_id": "chain_4",
+      "customers": [
+        "C1466917878",
+        "C768216420"
+      ],
+      "transaction_count": 2,
+      "total_volume": 116173.3,
+      "risk_score": 30,
+      "risk_level": "LOW",
+      "anomalies": [
+        {
+          "pattern": "sudden_type_change",
+          "description": "Sudden change from DEBIT to CASH_OUT (high-risk type)",
+          "transactions": [
+            {
+              "row": 43,
+              "customer": "C1466917878",
+              "type": "DEBIT",
+              "amount": 5758.59,
+              "destination": "C1297685781",
+              "isFraud": 0
+            },
+            {
+              "row": 44,
+              "customer": "C768216420",
+              "type": "CASH_OUT",
+              "amount": 110414.71,
+              "destination": "C1509514333",
+              "isFraud": 0
+            }
+          ],
+          "total_amount": 116173.3
+        },
+        {
+          "pattern": "sudden_amount_increase",
+          "description": "Amount spiked from 5,758.59 to 110,414.71 (19.2x increase)",
+          "transactions": [
+            {
+              "row": 43,
+              "customer": "C1466917878",
+              "type": "DEBIT",
+              "amount": 5758.59,
+              "destination": "C1297685781",
+              "isFraud": 0
+            },
+            {
+              "row": 44,
+              "customer": "C768216420",
+              "type": "CASH_OUT",
+              "amount": 110414.71,
+              "destination": "C1509514333",
+              "isFraud": 0
+            }
+          ],
+          "spike_ratio": 19.17
+        }
+      ],
+      "transactions": [
+        {
+          "row": 43,
+          "customer": "C1466917878",
+          "type": "DEBIT",
+          "amount": 5758.59,
+          "destination": "C1297685781",
+          "isFraud": 0
+        },
+        {
+          "row": 44,
+          "customer": "C768216420",
+          "type": "CASH_OUT",
+          "amount": 110414.71,
+          "destination": "C1509514333",
+          "isFraud": 0
+        }
+      ]
+    },
+    {
+      "chain_id": "chain_6",
+      "customers": [
+        "C460570271",
+        "C2072313080"
+      ],
+      "transaction_count": 2,
+      "total_volume": 25902.77,
+      "risk_score": 30,
+      "risk_level": "LOW",
+      "anomalies": [
+        {
+          "pattern": "sudden_type_change",
+          "description": "Sudden change from PAYMENT to CASH_OUT (high-risk type)",
+          "transactions": [
+            {
+              "row": 52,
+              "customer": "C460570271",
+              "type": "PAYMENT",
+              "amount": 2641.47,
+              "destination": "M1653361344",
+              "isFraud": 0
+            },
+            {
+              "row": 53,
+              "customer": "C2072313080",
+              "type": "CASH_OUT",
+              "amount": 23261.3,
+              "destination": "C2001112025",
+              "isFraud": 0
+            }
+          ],
+          "total_amount": 25902.77
+        },
+        {
+          "pattern": "sudden_amount_increase",
+          "description": "Amount spiked from 2,641.47 to 23,261.30 (8.8x increase)",
+          "transactions": [
+            {
+              "row": 52,
+              "customer": "C460570271",
+              "type": "PAYMENT",
+              "amount": 2641.47,
+              "destination": "M1653361344",
+              "isFraud": 0
+            },
+            {
+              "row": 53,
+              "customer": "C2072313080",
+              "type": "CASH_OUT",
+              "amount": 23261.3,
+              "destination": "C2001112025",
+              "isFraud": 0
+            }
+          ],
+          "spike_ratio": 8.81
+        }
+      ],
+      "transactions": [
+        {
+          "row": 52,
+          "customer": "C460570271",
+          "type": "PAYMENT",
+          "amount": 2641.47,
+          "destination": "M1653361344",
+          "isFraud": 0
+        },
+        {
+          "row": 53,
+          "customer": "C2072313080",
+          "type": "CASH_OUT",
+          "amount": 23261.3,
+          "destination": "C2001112025",
+          "isFraud": 0
+        }
+      ]
+    },
+    {
+      "chain_id": "chain_8",
+      "customers": [
+        "C867288517",
+        "C1528834618"
+      ],
+      "transaction_count": 2,
+      "total_volume": 88469.44,
+      "risk_score": 30,
+      "risk_level": "LOW",
+      "anomalies": [
+        {
+          "pattern": "sudden_type_change",
+          "description": "Sudden change from DEBIT to CASH_OUT (high-risk type)",
+          "transactions": [
+            {
+              "row": 61,
+              "customer": "C867288517",
+              "type": "DEBIT",
+              "amount": 5529.13,
+              "destination": "C242131142",
+              "isFraud": 0
+            },
+            {
+              "row": 62,
+              "customer": "C1528834618",
+              "type": "CASH_OUT",
+              "amount": 82940.31,
+              "destination": "C476800120",
+              "isFraud": 0
+            }
+          ],
+          "total_amount": 88469.44
+        },
+        {
+          "pattern": "sudden_amount_increase",
+          "description": "Amount spiked from 5,529.13 to 82,940.31 (15.0x increase)",
+          "transactions": [
+            {
+              "row": 61,
+              "customer": "C867288517",
+              "type": "DEBIT",
+              "amount": 5529.13,
+              "destination": "C242131142",
+              "isFraud": 0
+            },
+            {
+              "row": 62,
+              "customer": "C1528834618",
+              "type": "CASH_OUT",
+              "amount": 82940.31,
+              "destination": "C476800120",
+              "isFraud": 0
+            }
+          ],
+          "spike_ratio": 15.0
+        }
+      ],
+      "transactions": [
+        {
+          "row": 61,
+          "customer": "C867288517",
+          "type": "DEBIT",
+          "amount": 5529.13,
+          "destination": "C242131142",
+          "isFraud": 0
+        },
+        {
+          "row": 62,
+          "customer": "C1528834618",
+          "type": "CASH_OUT",
+          "amount": 82940.31,
+          "destination": "C476800120",
+          "isFraud": 0
+        }
+      ]
+    }
+  ],
+  "destination_anomalies": [
+    {
+      "destination_account": "C1590550415",
+      "pattern": "multiple_transfers_to_same_dest",
+      "description": "Account C1590550415 received 5 transfers totaling $4,876,596.40",
+      "transfer_count": 5,
+      "total_inflow": 4876596.4,
+      "senders": [
+        "C1449772539",
+        "C412788346",
+        "C1520267010",
+        "C1495608502",
+        "C843299092"
+      ]
+    },
+    {
+      "destination_account": "C1359044626",
+      "pattern": "multiple_transfers_to_same_dest",
+      "description": "Account C1359044626 received 3 transfers totaling $1,225,856.27",
+      "transfer_count": 3,
+      "total_inflow": 1225856.27,
+      "senders": [
+        "C12905860",
+        "C288306765",
+        "C835773569"
+      ]
+    }
+  ],
+  "individual_anomalies": [
+    {
+      "customer": "C905080434",
+      "transaction": {
+        "row": 17,
+        "customer": "C905080434",
+        "type": "CASH_OUT",
+        "amount": 229133.94,
+        "destination": "C476402209",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $229,133.94",
+        "High-risk transaction type: CASH_OUT",
+        "Amount (229,133.94) exceeds balance (15,325.00)"
+      ],
+      "risk_score": 30,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1670993182",
+      "transaction": {
+        "row": 21,
+        "customer": "C1670993182",
+        "type": "TRANSFER",
+        "amount": 215310.3,
+        "destination": "C1100439041",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $215,310.30",
+        "High-risk transaction type: TRANSFER",
+        "Amount (215,310.30) exceeds balance (705.00)"
+      ],
+      "risk_score": 30,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1984094095",
+      "transaction": {
+        "row": 26,
+        "customer": "C1984094095",
+        "type": "TRANSFER",
+        "amount": 311685.89,
+        "destination": "C932583850",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $311,685.89",
+        "High-risk transaction type: TRANSFER",
+        "Amount (311,685.89) exceeds balance (10,835.00)"
+      ],
+      "risk_score": 30,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1305486145",
+      "transaction": {
+        "row": 4,
+        "customer": "C1305486145",
+        "type": "TRANSFER",
+        "amount": 181.0,
+        "destination": "C553264065",
+        "isFraud": 1
+      },
+      "flags": [
+        "High-risk transaction type: TRANSFER",
+        "Flagged as fraud in source data"
+      ],
+      "risk_score": 25,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C840083671",
+      "transaction": {
+        "row": 5,
+        "customer": "C840083671",
+        "type": "CASH_OUT",
+        "amount": 181.0,
+        "destination": "C38997010",
+        "isFraud": 1
+      },
+      "flags": [
+        "High-risk transaction type: CASH_OUT",
+        "Flagged as fraud in source data"
+      ],
+      "risk_score": 25,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1716932897",
+      "transaction": {
+        "row": 15,
+        "customer": "C1716932897",
+        "type": "PAYMENT",
+        "amount": 11633.76,
+        "destination": "M801569151",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $11,633.76",
+        "Amount (11,633.76) exceeds balance (10,127.00)"
+      ],
+      "risk_score": 25,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1976401987",
+      "transaction": {
+        "row": 60,
+        "customer": "C1976401987",
+        "type": "TRANSFER",
+        "amount": 62610.8,
+        "destination": "C1937962514",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $62,610.80",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C207471778",
+      "transaction": {
+        "row": 81,
+        "customer": "C207471778",
+        "type": "TRANSFER",
+        "amount": 77957.68,
+        "destination": "C1761291320",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $77,957.68",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1243171897",
+      "transaction": {
+        "row": 82,
+        "customer": "C1243171897",
+        "type": "TRANSFER",
+        "amount": 17231.46,
+        "destination": "C783286238",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $17,231.46",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1376151044",
+      "transaction": {
+        "row": 83,
+        "customer": "C1376151044",
+        "type": "TRANSFER",
+        "amount": 78766.03,
+        "destination": "C1749186397",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $78,766.03",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C873175411",
+      "transaction": {
+        "row": 84,
+        "customer": "C873175411",
+        "type": "TRANSFER",
+        "amount": 224606.64,
+        "destination": "C766572210",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $224,606.64",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1443967876",
+      "transaction": {
+        "row": 85,
+        "customer": "C1443967876",
+        "type": "TRANSFER",
+        "amount": 125872.53,
+        "destination": "C392292416",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $125,872.53",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1449772539",
+      "transaction": {
+        "row": 86,
+        "customer": "C1449772539",
+        "type": "TRANSFER",
+        "amount": 379856.23,
+        "destination": "C1590550415",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $379,856.23",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C926859124",
+      "transaction": {
+        "row": 87,
+        "customer": "C926859124",
+        "type": "TRANSFER",
+        "amount": 1505626.01,
+        "destination": "C665576141",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $1,505,626.01",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1603696865",
+      "transaction": {
+        "row": 88,
+        "customer": "C1603696865",
+        "type": "TRANSFER",
+        "amount": 554026.99,
+        "destination": "C766572210",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $554,026.99",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C12905860",
+      "transaction": {
+        "row": 89,
+        "customer": "C12905860",
+        "type": "TRANSFER",
+        "amount": 147543.1,
+        "destination": "C1359044626",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $147,543.10",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C412788346",
+      "transaction": {
+        "row": 90,
+        "customer": "C412788346",
+        "type": "TRANSFER",
+        "amount": 761507.39,
+        "destination": "C1590550415",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $761,507.39",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1520267010",
+      "transaction": {
+        "row": 91,
+        "customer": "C1520267010",
+        "type": "TRANSFER",
+        "amount": 1429051.47,
+        "destination": "C1590550415",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $1,429,051.47",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C908084672",
+      "transaction": {
+        "row": 92,
+        "customer": "C908084672",
+        "type": "TRANSFER",
+        "amount": 358831.92,
+        "destination": "C392292416",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $358,831.92",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C288306765",
+      "transaction": {
+        "row": 93,
+        "customer": "C288306765",
+        "type": "TRANSFER",
+        "amount": 367768.4,
+        "destination": "C1359044626",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $367,768.40",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1556867940",
+      "transaction": {
+        "row": 94,
+        "customer": "C1556867940",
+        "type": "TRANSFER",
+        "amount": 209711.11,
+        "destination": "C1509514333",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $209,711.11",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1839168128",
+      "transaction": {
+        "row": 95,
+        "customer": "C1839168128",
+        "type": "TRANSFER",
+        "amount": 583848.46,
+        "destination": "C1286084959",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $583,848.46",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1495608502",
+      "transaction": {
+        "row": 96,
+        "customer": "C1495608502",
+        "type": "TRANSFER",
+        "amount": 1724887.05,
+        "destination": "C1590550415",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $1,724,887.05",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C835773569",
+      "transaction": {
+        "row": 97,
+        "customer": "C835773569",
+        "type": "TRANSFER",
+        "amount": 710544.77,
+        "destination": "C1359044626",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $710,544.77",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C843299092",
+      "transaction": {
+        "row": 98,
+        "customer": "C843299092",
+        "type": "TRANSFER",
+        "amount": 581294.26,
+        "destination": "C1590550415",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $581,294.26",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C605982374",
+      "transaction": {
+        "row": 99,
+        "customer": "C605982374",
+        "type": "TRANSFER",
+        "amount": 11996.58,
+        "destination": "C1225616405",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $11,996.58",
+        "High-risk transaction type: TRANSFER"
+      ],
+      "risk_score": 20,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C2048537720",
+      "transaction": {
+        "row": 6,
+        "customer": "C2048537720",
+        "type": "PAYMENT",
+        "amount": 11668.14,
+        "destination": "M1230701703",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $11,668.14"
+      ],
+      "risk_score": 15,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1238616099",
+      "transaction": {
+        "row": 37,
+        "customer": "C1238616099",
+        "type": "PAYMENT",
+        "amount": 24213.67,
+        "destination": "M70695990",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-value transaction: $24,213.67"
+      ],
+      "risk_score": 15,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1265012928",
+      "transaction": {
+        "row": 10,
+        "customer": "C1265012928",
+        "type": "PAYMENT",
+        "amount": 4024.36,
+        "destination": "M1176932104",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (4,024.36) exceeds balance (2,671.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1900366749",
+      "transaction": {
+        "row": 12,
+        "customer": "C1900366749",
+        "type": "DEBIT",
+        "amount": 9644.94,
+        "destination": "C997608398",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (9,644.94) exceeds balance (4,465.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C761750706",
+      "transaction": {
+        "row": 18,
+        "customer": "C761750706",
+        "type": "PAYMENT",
+        "amount": 1563.82,
+        "destination": "M1731217984",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (1,563.82) exceeds balance (450.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1043358826",
+      "transaction": {
+        "row": 27,
+        "customer": "C1043358826",
+        "type": "PAYMENT",
+        "amount": 6061.13,
+        "destination": "M1558079303",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (6,061.13) exceeds balance (443.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1608633989",
+      "transaction": {
+        "row": 38,
+        "customer": "C1608633989",
+        "type": "PAYMENT",
+        "amount": 8603.42,
+        "destination": "M1615617512",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (8,603.42) exceeds balance (253.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1481594086",
+      "transaction": {
+        "row": 42,
+        "customer": "C1481594086",
+        "type": "PAYMENT",
+        "amount": 1684.81,
+        "destination": "M1569435561",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (1,684.81) exceeds balance (297.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C260084831",
+      "transaction": {
+        "row": 45,
+        "customer": "C260084831",
+        "type": "PAYMENT",
+        "amount": 7823.46,
+        "destination": "M267814113",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (7,823.46) exceeds balance (998.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1615801298",
+      "transaction": {
+        "row": 51,
+        "customer": "C1615801298",
+        "type": "PAYMENT",
+        "amount": 2204.04,
+        "destination": "M490391704",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (2,204.04) exceeds balance (586.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C104716441",
+      "transaction": {
+        "row": 59,
+        "customer": "C104716441",
+        "type": "PAYMENT",
+        "amount": 2252.44,
+        "destination": "M1506951181",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (2,252.44) exceeds balance (1,627.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C811207775",
+      "transaction": {
+        "row": 66,
+        "customer": "C811207775",
+        "type": "DEBIT",
+        "amount": 4874.49,
+        "destination": "C1971489295",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (4,874.49) exceeds balance (153.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1161148117",
+      "transaction": {
+        "row": 67,
+        "customer": "C1161148117",
+        "type": "PAYMENT",
+        "amount": 6440.78,
+        "destination": "M516875052",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (6,440.78) exceeds balance (2,192.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1955990522",
+      "transaction": {
+        "row": 70,
+        "customer": "C1955990522",
+        "type": "DEBIT",
+        "amount": 5149.66,
+        "destination": "C1330106945",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (5,149.66) exceeds balance (4,782.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1987977423",
+      "transaction": {
+        "row": 78,
+        "customer": "C1987977423",
+        "type": "PAYMENT",
+        "amount": 2131.84,
+        "destination": "M61073295",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (2,131.84) exceeds balance (224.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C1305004711",
+      "transaction": {
+        "row": 101,
+        "customer": "C1305004711",
+        "type": "PAYMENT",
+        "amount": 8586.98,
+        "destination": "M494077446",
+        "isFraud": 0
+      },
+      "flags": [
+        "Amount (8,586.98) exceeds balance (3,763.00)"
+      ],
+      "risk_score": 10,
+      "risk_level": "LOW"
+    },
+    {
+      "customer": "C512549200",
+      "transaction": {
+        "row": 50,
+        "customer": "C512549200",
+        "type": "CASH_OUT",
+        "amount": 5346.89,
+        "destination": "C248609774",
+        "isFraud": 0
+      },
+      "flags": [
+        "High-risk transaction type: CASH_OUT"
+      ],
+      "risk_score": 5,
+      "risk_level": "LOW"
+    }
+  ]
+}
