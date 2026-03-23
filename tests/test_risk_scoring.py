@@ -11,9 +11,7 @@ Uses synthetic/inline test data and mocks for file I/O.
 """
 
 import csv
-import io
 import os
-from unittest.mock import mock_open, patch, MagicMock
 
 import pytest
 
